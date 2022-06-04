@@ -1,0 +1,242 @@
+{
+    // rownumber
+	"column_serial": [{
+		"pattern": "plain",
+		"value": "51"
+	}],
+	// 硬科技领域
+	"hard_tech_industries": [{
+		"pattern": "plain",
+		"value": "信息技术",
+		"modal": {
+			"type": "OVERVIEW",
+			"args": {
+				"entity_id": "1045000000",
+				"entity_type": "VERTICAL"
+			}
+		},
+		"action": {
+			"type": "PROFILE",
+			"args": {
+				"entity_id": "1045000000",
+				"entity_type": "VERTICAL"
+			}
+		}
+	}],
+	// 硬科技赛道
+	"hard_tech_verticals": [{
+		"pattern": "plain",
+		"value": "大数据",
+		"modal": {
+			"type": "OVERVIEW",
+			"args": {
+				"entity_id": "1020000000",
+				"entity_type": "VERTICAL"
+			}
+		},
+		"action": {
+			"type": "PROFILE",
+			"args": {
+				"entity_id": "1020000000",
+				"entity_type": "VERTICAL"
+			}
+		}
+	}, {
+		"pattern": "break_line"
+	}, {
+		"pattern": "plain",
+		"value": "云计算",
+		"modal": {
+			"type": "OVERVIEW",
+			"args": {
+				"entity_id": "2000001894",
+				"entity_type": "VERTICAL"
+			}
+		},
+		"action": {
+			"type": "PROFILE",
+			"args": {
+				"entity_id": "2000001894",
+				"entity_type": "VERTICAL"
+			}
+		}
+	}],
+	// 行业领域
+	"industries": [{
+		"pattern": "plain",
+		"value": "专业服务",
+		"modal": {
+			"type": "OVERVIEW",
+			"args": {
+				"entity_id": "1040000000",
+				"entity_type": "VERTICAL"
+			}
+		},
+		"action": {
+			"type": "PROFILE",
+			"args": {
+				"entity_id": "1040000000",
+				"entity_type": "VERTICAL"
+			}
+		}
+	}, {
+		"pattern": "break_line"
+	}, {
+		"pattern": "plain",
+		"value": "信息技术",
+		"modal": {
+			"type": "OVERVIEW",
+			"args": {
+				"entity_id": "1045000000",
+				"entity_type": "VERTICAL"
+			}
+		},
+		"action": {
+			"type": "PROFILE",
+			"args": {
+				"entity_id": "1045000000",
+				"entity_type": "VERTICAL"
+			}
+		}
+	}],
+	// 企业全称
+	"legal_name": [{
+		"pattern": "plain",
+		"value": "上海奥普生物医药股份有限公司",
+		"modal": {
+			"type": "OVERVIEW",
+			"args": {
+				"entity_id": "1167865179",
+				"entity_type": "ORGANIZATION"
+			}
+		},
+		"action": {
+			"type": "PROFILE",
+			"args": {
+				"entity_id": "1167865179",
+				"entity_type": "ORGANIZATION"
+			}
+		}
+	}],
+	//企业名称
+	"primary_name": [{
+		"pattern": "logo",
+		"value": "https://rimedata.com:9998/storage/public/pevc.image/6683/248b5b6119db27d7f53595e89f4eb71d"
+	}, {
+		"pattern": "plain",
+		"value": "奥普生物",
+		"modal": {
+			"type": "OVERVIEW",
+			"args": {
+				"entity_id": "1167865179",
+				"entity_type": "ORGANIZATION"
+			}
+		},
+		"action": {
+			"type": "PROFILE",
+			"args": {
+				"entity_id": "1167865179",
+				"entity_type": "ORGANIZATION"
+			}
+		}
+	}],
+	// 企业资质
+	"qualifications": [{
+		"pattern": "tag",
+		"value": "2020 年专精特新企业"
+	}, {
+		"pattern": "tag",
+		"value": "2018 年专精特新企业"
+	}, {
+		"pattern": "tag",
+		"value": "2016 年专精特新企业"
+	}, {
+		"pattern": "tag",
+		"value": "专精特新企业"
+	}, {
+		"pattern": "tag",
+		"value": "高新技术企业"
+	}, {
+		"pattern": "tag",
+		"value": "2020 年专精特新小巨人企业"
+	}],
+	// 细分赛道
+	"verticals": [{
+		"pattern": "plain",
+		"value": "大数据",
+		"modal": {
+			"type": "OVERVIEW",
+			"args": {
+				"entity_id": "1020000000",
+				"entity_type": "VERTICAL"
+			}
+		},
+		"action": {
+			"type": "PROFILE",
+			"args": {
+				"entity_id": "1020000000",
+				"entity_type": "VERTICAL"
+			}
+		}
+	}, {
+		"pattern": "break_line"
+	}, {
+		"pattern": "plain",
+		"value": "医疗器械",
+		"modal": {
+			"type": "OVERVIEW",
+			"args": {
+				"entity_id": "2000000211",
+				"entity_type": "VERTICAL"
+			}
+		},
+		"action": {
+			"type": "PROFILE",
+			"args": {
+				"entity_id": "2000000211",
+				"entity_type": "VERTICAL"
+			}
+		}
+	}, {
+		"pattern": "break_line"
+	}, {
+		"pattern": "plain",
+		"value": "POCT",
+		"modal": {
+			"type": "OVERVIEW",
+			"args": {
+				"entity_id": "2000000659",
+				"entity_type": "VERTICAL"
+			}
+		},
+		"action": {
+			"type": "PROFILE",
+			"args": {
+				"entity_id": "2000000659",
+				"entity_type": "VERTICAL"
+			}
+		}
+	}, {
+		"pattern": "break_line"
+	}, {
+		"pattern": "plain",
+		"value": "云计算",
+		"modal": {
+			"type": "OVERVIEW",
+			"args": {
+				"entity_id": "2000001894",
+				"entity_type": "VERTICAL"
+			}
+		},
+		"action": {
+			"type": "PROFILE",
+			"args": {
+				"entity_id": "2000001894",
+				"entity_type": "VERTICAL"
+			}
+		}
+	}]
+}
+
+
+

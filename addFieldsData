@@ -1,0 +1,275 @@
+{
+	"column_serial": [{
+		"pattern": "plain",
+		"value": "1"
+	}],
+	"features": [{
+		"pattern": "tag",
+		"value": "近期报道活跃"
+	}],
+	"financing_stage": [{
+		"pattern": "plain",
+		"value": "IPO"
+	}],
+	"hard_tech_industries": [{
+		"pattern": "plain",
+		"value": "先进制造",
+		"modal": {
+			"type": "OVERVIEW",
+			"args": {
+				"entity_id": "1025000000",
+				"entity_type": "VERTICAL"
+			}
+		},
+		"action": {
+			"type": "PROFILE",
+			"args": {
+				"entity_id": "1025000000",
+				"entity_type": "VERTICAL"
+			}
+		}
+	}, {
+		"pattern": "break_line"
+	}, {
+		"pattern": "plain",
+		"value": "新材料",
+		"modal": {
+			"type": "OVERVIEW",
+			"args": {
+				"entity_id": "2000001917",
+				"entity_type": "VERTICAL"
+			}
+		},
+		"action": {
+			"type": "PROFILE",
+			"args": {
+				"entity_id": "2000001917",
+				"entity_type": "VERTICAL"
+			}
+		}
+	}, {
+		"pattern": "break_line"
+	}, {
+		"pattern": "plain",
+		"value": "新能源",
+		"modal": {
+			"type": "OVERVIEW",
+			"args": {
+				"entity_id": "2000001968",
+				"entity_type": "VERTICAL"
+			}
+		},
+		"action": {
+			"type": "PROFILE",
+			"args": {
+				"entity_id": "2000001968",
+				"entity_type": "VERTICAL"
+			}
+		}
+	}],
+	"hard_tech_verticals": [{
+		"pattern": "plain",
+		"value": "新能源汽车",
+		"modal": {
+			"type": "OVERVIEW",
+			"args": {
+				"entity_id": "2000001974",
+				"entity_type": "VERTICAL"
+			}
+		},
+		"action": {
+			"type": "PROFILE",
+			"args": {
+				"entity_id": "2000001974",
+				"entity_type": "VERTICAL"
+			}
+		}
+	}, {
+		"pattern": "break_line"
+	}, {
+		"pattern": "plain",
+		"value": "复合材料",
+		"modal": {
+			"type": "OVERVIEW",
+			"args": {
+				"entity_id": "2000001976",
+				"entity_type": "VERTICAL"
+			}
+		},
+		"action": {
+			"type": "PROFILE",
+			"args": {
+				"entity_id": "2000001976",
+				"entity_type": "VERTICAL"
+			}
+		}
+	}],
+	"industries": [{
+		"pattern": "plain",
+		"value": "企业服务",
+		"modal": {
+			"type": "OVERVIEW",
+			"args": {
+				"entity_id": "1010000000",
+				"entity_type": "VERTICAL"
+			}
+		},
+		"action": {
+			"type": "PROFILE",
+			"args": {
+				"entity_id": "1010000000",
+				"entity_type": "VERTICAL"
+			}
+		}
+	}, {
+		"pattern": "break_line"
+	}, {
+		"pattern": "plain",
+		"value": "先进制造",
+		"modal": {
+			"type": "OVERVIEW",
+			"args": {
+				"entity_id": "1025000000",
+				"entity_type": "VERTICAL"
+			}
+		},
+		"action": {
+			"type": "PROFILE",
+			"args": {
+				"entity_id": "1025000000",
+				"entity_type": "VERTICAL"
+			}
+		}
+	}, {
+		"pattern": "break_line"
+	}, {
+		"pattern": "plain",
+		"value": "新能源汽车",
+		"modal": {
+			"type": "OVERVIEW",
+			"args": {
+				"entity_id": "2000001974",
+				"entity_type": "VERTICAL"
+			}
+		},
+		"action": {
+			"type": "PROFILE",
+			"args": {
+				"entity_id": "2000001974",
+				"entity_type": "VERTICAL"
+			}
+		}
+	}],
+	// 最近融资类型
+	"latest_deal_type": [{
+		"pattern": "plain",
+		"value": "A 股定增",
+		"modal": {
+			"type": "OVERVIEW",
+			"args": {
+				"entity_id": "12939677",
+				"entity_type": "EVENT"
+			}
+		},
+		"action": {
+			"type": "PROFILE",
+			"args": {
+				"entity_id": "12939677",
+				"entity_type": "EVENT"
+			}
+		}
+	}],
+	// 融资阶段
+	"legal_name": [{
+		"pattern": "plain",
+		"value": "上海华峰铝业股份有限公司",
+		"modal": {
+			"type": "OVERVIEW",
+			"args": {
+				"entity_id": "1004503052",
+				"entity_type": "ORGANIZATION"
+			}
+		},
+		"action": {
+			"type": "PROFILE",
+			"args": {
+				"entity_id": "1004503052",
+				"entity_type": "ORGANIZATION"
+			}
+		}
+	}],
+	"primary_name": [{
+		"pattern": "logo",
+		"value": "https://rimedata.com:9998/storage/public/pevc.image/6683/ebcc6b7634beb1a2d1fce6ecf694c22e"
+	}, {
+		"pattern": "plain",
+		"value": "华峰铝业",
+		"modal": {
+			"type": "OVERVIEW",
+			"args": {
+				"entity_id": "1004503052",
+				"entity_type": "ORGANIZATION"
+			}
+		},
+		"action": {
+			"type": "PROFILE",
+			"args": {
+				"entity_id": "1004503052",
+				"entity_type": "ORGANIZATION"
+			}
+		}
+	}],
+	"qualifications": [{
+		"pattern": "tag",
+		"value": "高新技术企业"
+	}, {
+		"pattern": "tag",
+		"value": "2021 年专精特新小巨人企业"
+	}, {
+		"pattern": "tag",
+		"value": "2021 年专精特新企业"
+	}, {
+		"pattern": "tag",
+		"value": "2013 年专精特新企业"
+	}, {
+		"pattern": "tag",
+		"value": "专精特新企业"
+	}],
+	"verticals": [{
+		"pattern": "plain",
+		"value": "新材料",
+		"modal": {
+			"type": "OVERVIEW",
+			"args": {
+				"entity_id": "2000001917",
+				"entity_type": "VERTICAL"
+			}
+		},
+		"action": {
+			"type": "PROFILE",
+			"args": {
+				"entity_id": "2000001917",
+				"entity_type": "VERTICAL"
+			}
+		}
+	}, {
+		"pattern": "break_line"
+	}, {
+		"pattern": "plain",
+		"value": "新能源",
+		"modal": {
+			"type": "OVERVIEW",
+			"args": {
+				"entity_id": "2000001968",
+				"entity_type": "VERTICAL"
+			}
+		},
+		"action": {
+			"type": "PROFILE",
+			"args": {
+				"entity_id": "2000001968",
+				"entity_type": "VERTICAL"
+			}
+		}
+	}]
+}

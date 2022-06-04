@@ -1,0 +1,38 @@
+/*fIndex := 2
+	data := map[string]string{}
+	for i := 0; i < 50; i++ {
+
+		fmt.Println(fIndex)
+		data["A"+strconv.Itoa(fIndex)] = "A"+strconv.Itoa(fIndex)
+		data["B"+strconv.Itoa(fIndex)] = "B"+strconv.Itoa(fIndex)
+		data["C"+strconv.Itoa(fIndex)] = "C"+strconv.Itoa(fIndex)
+		data["D"+strconv.Itoa(fIndex)] = "D"+strconv.Itoa(fIndex)
+		data["E"+strconv.Itoa(fIndex)] = "E"+strconv.Itoa(fIndex)
+		data["F"+strconv.Itoa(fIndex)] = "F"+strconv.Itoa(fIndex)
+		data["G"+strconv.Itoa(fIndex)] = "G"+strconv.Itoa(fIndex)
+
+
+		/*f.SetCellStr(SheetName, "A"+string(fIndex), "A"+string(fIndex))
+		f.SetCellStr(SheetName, "B"+string(fIndex), "B"+string(fIndex))
+		f.SetCellStr(SheetName, "C"+string(fIndex), "C"+string(fIndex))
+		f.SetCellStr(SheetName, "D"+string(fIndex), "D"+string(fIndex))
+		f.SetCellStr(SheetName, "E"+string(fIndex), "E"+string(fIndex))
+		f.SetCellStr(SheetName, "F"+string(fIndex), "F"+string(fIndex))
+		f.SetCellStr(SheetName, "G"+string(fIndex), "G"+string(fIndex))
+		fIndex++
+	}
+
+	for k, v := range data {
+		//设置单元格的值
+		f.SetCellValue(SheetName, k, v)
+	}*/
+
+
+
+	/*if err := f.SaveAs("./docs/Book1.xlsx"); err != nil {
+    		fmt.Println(err)
+    	}
+    	err := f.Close()
+    	if err != nil {
+    		fmt.Println(err)
+    	}*/

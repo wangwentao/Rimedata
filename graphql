@@ -1,0 +1,101 @@
+{
+	"query": "query RealmSheet($realmID: String!, $sheetID: String!, $first: MaybeInt32, $after: MaybeString, $last: MaybeInt32, $before: MaybeString, $conditions: [NextSearchConditionInput]!, $columnIDs: [String!]!, $templateID: MaybeString, $orderColumns: [OrderColumn]) {\n  realmSheet(realmID: $realmID, sheetID: $sheetID, first: $first, after: $after, last: $last, before: $before, conditions: $conditions, columnIDs: $columnIDs, templateID: $templateID, orderColumns: $orderColumns) {\n    totalCount\n    aggregate {\n      column\n      average\n      median\n      summation\n      max\n      min\n      __typename\n    }\n    nodes {\n      entityID\n      entityType\n      data\n      id\n      __typename\n    }\n    pageInfo {\n      ...PageInfoFields\n      __typename\n    }\n    permissions {\n      ...PermissionFields\n      __typename\n    }\n    __typename\n  }\n}\n\nfragment PageInfoFields on PageInfo {\n  hasPreviousPage\n  hasNextPage\n  startCursor\n  endCursor\n}\n\nfragment PermissionFields on Permission {\n  __typename\n  ... on FrequencyPermission {\n    used\n    total\n    remaining\n    __typename\n  }\n  ... on LockPermission {\n    locked\n    __typename\n  }\n  ... on PaginationPermission {\n    rowLimit\n    lockNextPage\n    lockPreviousPage\n    __typename\n  }\n}\n",
+	"operationName": "RealmSheet",
+	"variables": {
+		"realmID": "pevc.enterprise",
+		"sheetID": "pevc.enterprise_all",
+		"columnIDs": ["column_serial", "primary_name", "legal_name", "industries", "qualifications", "hard_tech_verticals", "verticals", "hard_tech_industries", "features"],
+		"conditions": [{
+			"id": "enterprise.region",
+			"name": "总部地区",
+			"type": "SEARCH_FIELD",
+			"operator": {
+				"operator": "INCLUDES_ANY"
+			},
+			"options": [{
+				"id": "0301010100",
+				"name": "上海市",
+				"values": ["0301010100"],
+				"operator": "INCLUDES_ANY"
+			}]
+		}, {
+			"id": "enterprise.qualification",
+			"name": "企业资质",
+			"type": "CHECKBOX",
+			"operator": {
+				"name": "并集",
+				"operator": "INCLUDES_ANY"
+			},
+			"options": [{
+				"id": "specialized_and_new_enterprise",
+				"name": "专精特新企业",
+				"values": ["108020116"],
+				"operator": "INCLUDES_ANY"
+			}]
+		}],
+		"orderColumns": [],
+		"first": 50,
+		"after": "NDk="
+	}
+}
+
+
+{
+	"query": "query RealmSheet($realmID: String!, $sheetID: String!, $first: MaybeInt32, $after: MaybeString, $last: MaybeInt32, $before: MaybeString, $conditions: [NextSearchConditionInput]!, $columnIDs: [String!]!, $templateID: MaybeString, $orderColumns: [OrderColumn]) {\n  realmSheet(realmID: $realmID, sheetID: $sheetID, first: $first, after: $after, last: $last, before: $before, conditions: $conditions, columnIDs: $columnIDs, templateID: $templateID, orderColumns: $orderColumns) {\n    totalCount\n    aggregate {\n      column\n      average\n      median\n      summation\n      max\n      min\n      __typename\n    }\n    nodes {\n      entityID\n      entityType\n      data\n      id\n      __typename\n    }\n    pageInfo {\n      ...PageInfoFields\n      __typename\n    }\n    permissions {\n      ...PermissionFields\n      __typename\n    }\n    __typename\n  }\n}\n\nfragment PageInfoFields on PageInfo {\n  hasPreviousPage\n  hasNextPage\n  startCursor\n  endCursor\n}\n\nfragment PermissionFields on Permission {\n  __typename\n  ... on FrequencyPermission {\n    used\n    total\n    remaining\n    __typename\n  }\n  ... on LockPermission {\n    locked\n    __typename\n  }\n  ... on PaginationPermission {\n    rowLimit\n    lockNextPage\n    lockPreviousPage\n    __typename\n  }\n}\n",
+	"operationName": "RealmSheet",
+	"variables": {
+		"realmID": "pevc.enterprise",
+		"sheetID": "pevc.enterprise_all",
+		"columnIDs": ["column_serial", "primary_name", "legal_name", "industries", "qualifications", "hard_tech_verticals", "verticals", "hard_tech_industries", "features", "team_members", "number_of_board_members", "board_members", "latest_deal_type", "number_of_deals", "latest_deal_date", "latest_deal_size", "financing_stage", "number_of_investments", "number_of_acquisitions", "number_of_investments_ltm", "number_of_acquisitions_ltm", "latest_investment", "latest_acquisition", "number_of_patents", "number_of_authorized_patents", "number_of_unauthorized_patents", "founders"],
+		"conditions": [{
+			"id": "enterprise.region",
+			"name": "总部地区",
+			"type": "SEARCH_FIELD",
+			"operator": {
+				"operator": "INCLUDES_ANY"
+			},
+			"options": [{
+				"id": "0301010100",
+				"name": "上海市",
+				"values": ["0301010100"],
+				"operator": "INCLUDES_ANY"
+			}]
+		}],
+		"orderColumns": [],
+		"first": 50,
+		"after": "NDk="
+	}
+}
+
+
+
+
+
+type GraphQL struct {
+	Query         string `json:"query"`
+	OperationName string `json:"operationName"`
+	Variables     struct {
+		RealmID    string   `json:"realmID"`
+		SheetID    string   `json:"sheetID"`
+		ColumnIDs  []string `json:"columnIDs"`
+		Conditions []struct {
+			Id       string `json:"id"`
+			Name     string `json:"name"`
+			Type     string `json:"type"`
+			Operator struct {
+				Operator string `json:"operator"`
+				Name     string `json:"name,omitempty"`
+			} `json:"operator"`
+			Options []struct {
+				Id       string   `json:"id"`
+				Name     string   `json:"name"`
+				Values   []string `json:"values"`
+				Operator string   `json:"operator"`
+			} `json:"options"`
+		} `json:"conditions"`
+		OrderColumns []interface{} `json:"orderColumns"`
+		First        int           `json:"first"`
+		After        string        `json:"after"`
+	} `json:"variables"`
+}
+
